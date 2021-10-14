@@ -2,9 +2,17 @@
 
 namespace objects
 {
+    //You can also create an object of a class and access it in another class. This is often used for better organization of classes (one class has all the fields and methods, while the other class holds the Main() method (code to be executed)).
     class Car
     {
-        public string color = "red";
+        //Did you notice the public keyword? It is called an access modifier, which specifies that the color variable/field of Car is accessible for other classes as well, such as Program.
+        // Class members
+        public string color = "red"; // field
+        int maxSpeed = 200;          // field
+        public void fullThrottle()   // method
+        {
+            Console.WriteLine("The car is going as fast as it can!");
+        }
     }
     class Program
     {
@@ -12,6 +20,7 @@ namespace objects
         {
             Car myObj = new Car();
             Console.WriteLine(myObj.color);
+            myObj.fullThrottle();
         }
     }
 }
