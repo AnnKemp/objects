@@ -2,15 +2,16 @@
 
 namespace objects
 {
-    class Flower
+    class Car
     {
-        string color = "red";
+        public string color = "red";
+    }
+    class Program
+    {
         static void Main(string[] args)
         {
-            Flower myObj1 = new Flower();
-            Flower myObj2 = new Flower();
-            Console.WriteLine(myObj1.color);
-            Console.WriteLine(myObj2.color);
+            Car myObj = new Car();
+            Console.WriteLine(myObj.color);
         }
     }
 }
